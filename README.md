@@ -1,7 +1,7 @@
 # urlshortener Application
 This is a python Django  project which shortens URL
 
-# About
+# setup the project
 Enable a virtual environment 
 
 # Steps of setting up 
