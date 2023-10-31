@@ -31,8 +31,5 @@ On Windows:
     source myenv/bin/activate
     
     
-
-    
-
-# Running it 
+## Running it 
 
