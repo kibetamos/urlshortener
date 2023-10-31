@@ -33,3 +33,5 @@ On Windows:
     
 ## Running it 
 
+        python manage.py runserver
+
