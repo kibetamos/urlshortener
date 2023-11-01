@@ -4,7 +4,7 @@ This is a python Django  project which shortens URL
 
 Enable a virtual environment 
 
-## Steps of setting up   
+### Steps of setting up   
 
 Install Python: Make sure you have Python installed on your system. 
 
