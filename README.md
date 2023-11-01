@@ -6,6 +6,7 @@ Enable a virtual environment
 
 ## Steps of setting up   
 
+
 Install Python: Make sure you have Python installed on your system. 
 
 You can download the latest version from the official Python website (https://www.python.org) and follow the installation instructions for your operating system.
