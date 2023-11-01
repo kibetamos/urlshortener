@@ -22,7 +22,6 @@ This will create a new virtual environment named "myenv" in your project directo
 Activate the virtual environment: Activate the virtual environment you created. The process for activating the virtual environment depends on your operating system:
 
 On Windows:
-    
      
     myenv\Scripts\activate
     
