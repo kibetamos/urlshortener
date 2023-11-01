@@ -25,7 +25,6 @@ On Windows:
      
     myenv\Scripts\activate
     
-    
  On macOS/Linux:
     
     source myenv/bin/activate
