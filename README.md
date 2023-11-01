@@ -15,7 +15,7 @@ Set up a virtual environment (optional but recommended): It's a good practice to
 
 Open a terminal or command prompt, navigate to your project directory, and run the following command:
 
-        python -m venv myenv
+    python -m venv myenv
 
 This will create a new virtual environment named "myenv" in your project directory.
 
