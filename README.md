@@ -12,7 +12,6 @@ You can download the latest version from the official Python website (https://ww
 
 Set up a virtual environment (optional but recommended): It's a good practice to create a virtual environment for your project to keep its dependencies isolated. 
 
-
 Open a terminal or command prompt, navigate to your project directory, and run the following command:
 
     python -m venv myenv
