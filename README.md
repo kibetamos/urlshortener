@@ -1,4 +1,4 @@
-## urlshortener Application 
+## urlshortener Application
 
 This is a python Django  project which shortens URL
 
