@@ -22,7 +22,6 @@ Activate the virtual environment: Activate the virtual environment you created. 
 
 On Windows:
 
-     
     myenv\Scripts\activate
 
     
