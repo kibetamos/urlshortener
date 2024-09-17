@@ -16,6 +16,7 @@ Open a terminal or command prompt, navigate to your project directory, and run t
 
     python -m venv myenv
 
+
 This will create a new virtual environment named "myenv" in your project directory.
 
 Activate the virtual environment: Activate the virtual environment you created. The process for activating the virtual environment depends on your operating system:
