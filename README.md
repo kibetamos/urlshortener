@@ -2,8 +2,6 @@
 
 This is a python Django  project which shortens URL
 
-
-
 Enable a virtual environment 
 
 ## Steps of setting up   
