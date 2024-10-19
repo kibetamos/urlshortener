@@ -11,12 +11,7 @@ The URL Shortener Application is a Python Django project that provides users wit
 
    ```bash
    python -m venv myenv
-
-
-Open a terminal or command prompt, navigate to your project directory, and run the following command:
-
-    python -m venv myenv
-
+   
 
 This will create a new virtual environment named "myenv" in your project directory.
 
