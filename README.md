@@ -5,13 +5,13 @@ The URL Shortener Application is a Python Django project that provides users wit
 
 ## CI/CD Integration
 
-This project utilizes Continuous Integration and Continuous Deployment (CI/CD) practices through GitHub Actions. 
+   This project utilizes Continuous Integration and Continuous Deployment (CI/CD) practices through GitHub Actions. 
 
-The configuration file .github/workflows/jekyll-docker.yml automates the build process whenever there are pushes or pull requests to the main branch.
+   The configuration file .github/workflows/jekyll-docker.yml automates the build process whenever there are pushes or pull requests to the main branch.
 
-This workflow ensures that the site is built in a Docker container every time you push changes to the main branch or create a pull request. 
+   This workflow ensures that the site is built in a Docker container every time you push changes to the main branch or create a pull request. 
 
-This automation enhances the reliability and performance of the site, allowing for seamless updates and feature implementations.
+   This automation enhances the reliability and performance of the site, allowing for seamless updates and feature implementations.
 
 
 
