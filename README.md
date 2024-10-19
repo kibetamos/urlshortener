@@ -8,6 +8,8 @@ web addresses through concise links.
 
 Install Python: Ensure Python is installed on your system. Download the latest version from the official Python website and follow the installation instructions for your operating system.
 
+Set Up a Virtual Environment (optional but recommended): Creating a virtual environment helps isolate project dependencies. 
+
 Open a terminal or command prompt, navigate to your project directory, and run the following command:
 
     python -m venv myenv
