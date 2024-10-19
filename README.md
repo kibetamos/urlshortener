@@ -1,17 +1,12 @@
-## urlshortener Application
+## URL Shortener Application
 
+The URL Shortener Application is a Python Django project that provides users with a simple interface to shorten long URLs, 
+making them easier to share and manage. This application enhances user convenience by allowing for quick access to lengthy 
+web addresses through concise links.
 
-This is a python Django  project which shortens URL
+## Setup Instructions
 
-Enable a virtual environment 
-
-## Steps of setting up   
-
-Install Python: Make sure you have Python installed on your system. 
-
-You can download the latest version from the official Python website (https://www.python.org) and follow the installation instructions for your operating system. 
-
-Set up a virtual environment (optional but recommended): It's a good practice to create a virtual environment for your project to keep its dependencies isolated. 
+Install Python: Ensure Python is installed on your system. Download the latest version from the official Python website and follow the installation instructions for your operating system.
 
 Open a terminal or command prompt, navigate to your project directory, and run the following command:
 
