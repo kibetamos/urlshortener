@@ -31,3 +31,6 @@ On Windows:
 
      python manage.py runserver
 
+## CI/CD Integration
+
+This project utilizes Continuous Integration and Continuous Deployment (CI/CD) practices through GitHub Actions, ensuring automated testing and seamless deployment. This integration enhances code reliability and accelerates the development workflow, making it easier to manage updates and new features.
