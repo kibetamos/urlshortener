@@ -33,4 +33,10 @@ On Windows:
 
 ## CI/CD Integration
 
-This project utilizes Continuous Integration and Continuous Deployment (CI/CD) practices through GitHub Actions, ensuring automated testing and seamless deployment. This integration enhances code reliability and accelerates the development workflow, making it easier to manage updates and new features.
+This project utilizes Continuous Integration and Continuous Deployment (CI/CD) practices through GitHub Actions. 
+The configuration file .github/workflows/jekyll-docker.yml automates the build process whenever there are pushes or pull requests to the main branch.
+
+This workflow ensures that the site is built in a Docker container every time you push changes to the main branch or create a pull request. 
+This automation enhances the reliability and performance of the site, allowing for seamless updates and feature implementations.
+
+
