@@ -3,6 +3,16 @@
 **Overview**  
 The URL Shortener Application is a Python Django project that provides users with a simple interface to shorten long URLs, making them easier to share and manage. This application enhances user convenience by allowing for quick access to lengthy web addresses through concise links.
 
+## CI/CD Integration
+
+This project utilizes Continuous Integration and Continuous Deployment (CI/CD) practices through GitHub Actions. 
+The configuration file .github/workflows/jekyll-docker.yml automates the build process whenever there are pushes or pull requests to the main branch.
+
+This workflow ensures that the site is built in a Docker container every time you push changes to the main branch or create a pull request. 
+This automation enhances the reliability and performance of the site, allowing for seamless updates and feature implementations.
+
+
+
 ## Setup Instructions
 
 1. **Install Python**: Ensure Python is installed on your system. Download the latest version from the official [Python website](https://www.python.org) and follow the installation instructions for your operating system.
@@ -31,12 +41,5 @@ On Windows:
 
      python manage.py runserver
 
-## CI/CD Integration
-
-This project utilizes Continuous Integration and Continuous Deployment (CI/CD) practices through GitHub Actions. 
-The configuration file .github/workflows/jekyll-docker.yml automates the build process whenever there are pushes or pull requests to the main branch.
-
-This workflow ensures that the site is built in a Docker container every time you push changes to the main branch or create a pull request. 
-This automation enhances the reliability and performance of the site, allowing for seamless updates and feature implementations.
 
 
