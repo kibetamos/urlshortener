@@ -41,5 +41,3 @@ On Windows:
 
      python manage.py runserver
 
-
-
