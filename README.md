@@ -14,6 +14,7 @@ The URL Shortener Application is a Python Django project that provides users wit
    This automation enhances the reliability and performance of the site, allowing for seamless updates and feature implementations.
 
 
+
 ## Setup Instructions
 
 1. **Install Python**: Ensure Python is installed on your system. Download the latest version from the official [Python website](https://www.python.org) and follow the installation instructions for your operating system.
