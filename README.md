@@ -3,6 +3,8 @@
 **Overview**  
 The URL Shortener Application is a Python Django project that provides users with a simple interface to shorten long URLs, making them easier to share and manage. This application enhances user convenience by allowing for quick access to lengthy web addresses through concise links.
 
+
+
 ## CI/CD Integration
 
    This project utilizes Continuous Integration and Continuous Deployment (CI/CD) practices through GitHub Actions. 
