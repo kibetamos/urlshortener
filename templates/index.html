@@ -1,86 +1,100 @@
 <head>
-  <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+
   <style>
-      *,
-*::before,
-*::after {
-box-sizing: border-box;
-}
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
 
-body,
-section {
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 1rem;
-}
+    body {
+      min-height: 100vh;
+      margin: 0;
+      font-family: "Lato", sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      background: #f0f0f0;
+    }
 
-body {
-min-height: 100vh;
-font-family: "Lato", sans-serif;
-line-height: 1.5;
-color: #111;
-}
+    main {
+      width: 100%;
+      max-width: 720px;
+      border-radius: 8px;
+      overflow: hidden;
+      background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+      border: 2px solid #330867;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
 
-main {
-max-width: 720px;
-width: 100%;
-border: 2.5px solid #330867;
-border-radius: 2.5px;
-box-shadow: 0 10px 20px rgba(17, 17, 17, 0.125),
-  0 5px 5px rgba(17, 17, 17, 0.25);
-background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-}
+    h1 {
+      margin: 0;
+      padding: 1.2rem;
+      text-align: center;
+      color: #fff;
+      font-weight: 700;
+    }
 
-h1 {
-padding: 1rem;
-color: white;
-}
+    form {
+      padding: 1rem;
+      background: transparent;
+    }
 
-input,
-button {
-font-family: inherit;
-line-height: inherit;
-color: inherit;
-border: 0;
-padding: 1rem;
-}
+    input {
+      width: 100%;
+      padding: 1rem;
+      border: none;
+      font-size: 1rem;
+      border-radius: 4px;
+    }
 
-input {
-box-sizing: border-box;
-width: 100%;
-}
+    .buttons {
+      display: flex;
+      margin-top: 1rem;
+    }
 
-.buttons {
-display: flex;
-}
+    button {
+      flex: 1;
+      padding: 1rem;
+      border: none;
+      cursor: pointer;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.15);
+      font-size: 1rem;
+      transition: background 0.25s ease;
+    }
 
-button {
-cursor: pointer;
-flex: 1;
-background-color: transparent;
-color: white;
-hover {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-}
+    button:hover {
+      background: rgba(255, 255, 255, 0.35);
+    }
 
-section {
-min-height: 120px;
-text-align: center;
-background-color: white;
-}
+    section {
+      background: #fff;
+      padding: 2rem;
+      text-align: center;
+      min-height: 120px;
+    }
 
+    h2 {
+      margin: 0;
+      word-break: break-all;
+    }
   </style>
 </head>
+
 <main>
   <h1>Shorten your URL here</h1>
+
   <form id="post-form">
-    {% csrf_token %}
-    <input type="text" name="link" id="link" placeholder="Enter URL here">
-    <div class="buttons">
-      <button type="submit" id="shorten">Shorten</button>
-    </div>
+      {% csrf_token %}
+      <input type="text" id="link" name="link" placeholder="Enter URL here" />
+      <div class="buttons">
+        <button type="submit" id="shorten">Shorten</button>
+      </div>
   </form>
 
   <section id="section">
@@ -88,30 +102,33 @@ background-color: white;
   </section>
 </main>
 
-<script type="text/javascript">
-  $(document).on('submit', '#post-form', function (e) {
+
+<script>
+  $(document).on("submit", "#post-form", function (e) {
     e.preventDefault();
 
+    const urlInput = $("#link").val();
+    const csrf = $("input[name=csrfmiddlewaretoken]").val();
+    const resultBox = $("h2");
+
     $.ajax({
-      type: 'POST',
-      url: '/create',
+      type: "POST",
+      url: "/create",
       data: {
-        link: $('#link').val(),
-        csrfmiddlewaretoken: $('input[name=csrfmiddlewaretoken]').val(),
+        link: urlInput,
+        csrfmiddlewaretoken: csrf
       },
+
       success: function (data) {
-        // Check if the response contains an 'error' key
-        if (data.hasOwnProperty('error')) {
-          $('h2').html("Invalid URL: " + data.error[0]);
+        if (data.error) {
+          resultBox.html("Invalid URL: " + data.error[0]);
         } else {
-          // Display the shortened URL
-          $('h2').html("www.surls.ga/" + data);
+          resultBox.html("www.surls.ga/" + data);
         }
       },
-      error: function (xhr, textStatus, errorThrown) {
-        // Handle other errors (e.g., server errors)
-        console.error("Error:", errorThrown);
-        $('h2').html("Input A valid URL");
+
+      error: function () {
+        resultBox.html("Input a valid URL");
       }
     });
   });
