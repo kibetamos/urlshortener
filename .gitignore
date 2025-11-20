@@ -2,3 +2,6 @@
 .env/
 env
 env/
+/home/bench/urlshortener/shortner/__pycache__
+
+urlshortener/__pycache__
