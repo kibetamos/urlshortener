@@ -17,6 +17,8 @@ The URL Shortener Application is a Python Django project that provides users wit
 
 ## Setup Instructions
 
+
+
 1. **Install Python**: Ensure Python is installed on your system. Download the latest version from the official [Python website](https://www.python.org) and follow the installation instructions for your operating system.
 
 2. **Set Up a Virtual Environment** (optional but recommended): Creating a virtual environment helps isolate project dependencies. Open a terminal or command prompt, navigate to your project directory, and run the following command:
